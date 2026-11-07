@@ -11,13 +11,13 @@ use {
 };
 
 use smashline::Priority::*;
-
-use crate::variables::*;
 use crate::MARKED_COLORS;
 
 mod acmd;
-mod frame;
+mod wariobike;
 mod status;
+
+pub const FIGHTER_WARIO_STATUS_KIND_SPECIAL_S_IMPACT:  i32 = 0x1F5;
 
 pub fn is_metalwario() -> Vec<usize> {
     let mut costume = &mut Vec::new();
@@ -34,6 +34,6 @@ pub fn is_metalwario() -> Vec<usize> {
 pub fn install() {
 
     acmd::install();
-    frame::install();
+    wariobike::install();
     status::install();
 }

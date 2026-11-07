@@ -8,6 +8,8 @@ mod specials;
 mod tilts;
 mod jabs;
 mod smashes;
+mod other;
+mod taunt;
 
 pub fn install() {
     ground::install();
@@ -17,4 +19,6 @@ pub fn install() {
     tilts::install();
     jabs::install();
     smashes::install();
+    other::install();
+    taunt::install();
 }

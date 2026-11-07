@@ -20,7 +20,6 @@ use param_config::*;
 use smash::lib::lua_const::{FIGHTER_KIND_WARIO};
 
 mod wariom;
-mod variables;
 
 pub static mut MARKED_COLORS: [bool; 256] = [false; 256];
 pub static mut LAST_COLOR: i32 = -1;
